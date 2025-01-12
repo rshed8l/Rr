@@ -1,0 +1,5 @@
+pkg update && pkg upgrade -y
+pkg install python git clang make -y
+git clone https://github.com/vanhauser-thc/thc-hydra && cd thc-hydra
+./configure && make && make install
+./hydra -v
